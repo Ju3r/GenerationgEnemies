@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Spawning());
+        StartCoroutine(ContinuousSpawn());
     }
 
     private Enemy Spawn()
@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
         return enemy;
     }
 
-    private IEnumerator Spawning()
+    private IEnumerator ContinuousSpawn()
     {
         WaitForSeconds wait = new WaitForSeconds(_delay);
 
