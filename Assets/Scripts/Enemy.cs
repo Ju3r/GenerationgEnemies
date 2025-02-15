@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody), typeof(Mover))]
+[RequireComponent(typeof(Mover))]
 public class Enemy : MonoBehaviour 
 {
     private Mover _mover;
